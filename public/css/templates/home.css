@@ -1,0 +1,263 @@
+.body {
+    height: 100%;
+    background-color: #B6B6B6;
+}
+
+/* Heder */
+.header {
+    display: flex;
+    min-height: 80px;
+    padding: 18px 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    margin: 0 16px;
+    width: 100%;
+    align-self: center;
+}
+
+.logo i {
+    margin: 0 16px;
+    font-size: 42px;
+}
+
+.logo i:hover {
+    color: white; 
+    transition-duration: 0.5s;
+}
+
+.search {
+    margin: 0 16px;
+    width: 100%;
+    text-align: center;
+    align-self: center;
+}
+
+.search form {
+    display: flex;
+}
+
+.search button {
+    right: 40px;
+    border-radius: 5px;
+    border: none;
+    position: relative;
+    width: 40px;
+}
+
+.search input {
+    padding: 8px 56px 8px 16px;
+}
+
+.search button:hover {
+    background: #dbdbdb;
+}
+
+.navigation {
+    margin: 0 16px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-buttons {
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-user {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.nav-user a {
+    font-size: 16px;
+    margin: 0 24px;
+    font-weight: 600;
+}
+
+
+.button-item {
+    margin-right: 8px;
+}
+
+.button-item button {
+    transition-duration: 0.3s;
+}
+  
+.button-item button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* Info */
+.info {
+    background-color: #F8F8F8;
+    min-height: 300px;
+    border-radius: 5px;
+    box-shadow: 0 10px 6px -6px #777;
+    margin: 16px auto;
+    padding: 16px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.info p {
+    margin-bottom: 16px;
+}
+
+.info-1 {
+    transition-duration: 0.5s;
+    padding: 32px;
+    align-self: center;
+    background-color: #D0D0D0;
+    margin: 100px 40px 0 40px;
+    max-width: 200px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 500;
+    min-height: 100px;
+    font-size: 18px;
+}
+
+.info-1:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 7px 50px 0 rgba(0,0,0,0.19);
+}
+
+.info-2 {
+    background-color: #B6B6B6;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    max-width: 240px;
+    min-height: 100px;
+    transition-duration: 0.5s;
+    padding: 24px;
+    max-height: 220px;
+    margin: 0 40px;
+    border-radius: 5px;
+}
+
+.info-2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 7px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* Content */
+.content {
+    background-color: #DFDFDF;
+    display: flex;
+    height: 500px;
+}
+
+.menu {
+    padding: 0 0 16px 0;
+    width: 15%;
+    background-color: #D0D0D0;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  list-style-type: none;
+}
+
+.menu li {
+    width: 100%;
+    padding: 6px 0;
+    line-height: 35px;
+}
+
+.menu li:hover {
+    background: #A8A8A8;
+}
+
+.menu a {
+    position: relative;
+    display: block;
+    padding: 4px 0;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.menu a:after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #781AEF;
+    transform: scaleX(0);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+}
+
+.menu a:hover {
+    color: #781AEF;
+    font-weight: 600;
+}
+
+.menu a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.posts {
+    padding: 50px;
+    box-sizing: border-box;
+    width: 60%;
+}
+
+.inicial-posts {
+    background-color: #F8F8F8;
+    margin: 24px 0;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 16px;
+    transition-duration: 0.4s;
+}
+
+.inicial-posts:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.post-title {
+    margin-bottom: 36px;
+}
+
+.post-info {
+    display: flex;
+}
+
+.votes {
+    padding: 8px;
+    text-align: center;
+    border: px solid #89AF7B;
+    border-radius: 6px;
+    margin-right: 20px;
+}
+
+.post-replys {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #89AF7B;
+    border-radius: 6px;
+    margin-right: 20px;
+}
+
+.post-tag {
+    margin-left: auto;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #000000;
+    align-self: center;
+    border-radius: 10px;
+}
